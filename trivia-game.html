@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hunger Games Trivia</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="text-center">
+    <div class="jumbotron">
+      <h1>Hunger Games Trivia</h1>
+      <p>Try to see if you can get all three of these questions correct. Three wrong guesses and you lose!</p>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" class="text-center">
+    <h2 id ="show-player-name"> </h2><h2>Score: <span>0</span> Tries Left: <span>3</span></h2>
+  </div>
+
+  <!-- Name Screen -->
+  <div id="name-screen" class="text-center">
+    <h2>Please enter your name to begin:</h2>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input id="player-name" type="text" class="form-control" placeholder="Jane Doe">
+      </div>
+      <button id="player-name-btn" type="submit" class="btn btn-success">Play Game</button>
+    </form>
+  </div>
+
+  <!-- Question 1 -->
+  <div id="question1" class="text-center">
+    <h2>1. What was Katniss's nickname throughout the series?</h2>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input id="question1-input" type="text" class="form-control" placeholder="Jane Doe">
+      </div>
+      <button id="player-answer-1" type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+  <div>
+      <h3 id="right-message">You got it right!</h3>
+      <h3 id="wrong-message">You got it wrong!</h3>
+    </div>
+  
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
